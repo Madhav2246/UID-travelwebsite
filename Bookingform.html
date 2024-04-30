@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now - Travel Package Booking Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        display:block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        text-align:end;
+        background-color: #45a049;
+    }
+    .btn-group {
+          color: rgb(250, 250, 250);
+          text-decoration:none;
+        }
+    footer{
+        text-align: center;
+        font-style: oblique;
+      }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Book Now - Travel Package Booking Form</h2>
+    <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="Package">Choose Package:</label>
+        <select  id="Package" name="Package" required>
+            <option value="Bhavyadarshini">Bhavyadarshini</option>
+            <option value="Anandadarshini">Anandadarshini</option>
+            <option value="DreamyDelight">Dreamy Delight</option>
+            <option value="MightyAdventurous">Mighty Adventurous</option>
+            <option value="DigDeeper">Dig Deeper</option>
+            <option value="Scienceofindia">Science's of india</option>
+            <option value="NorthernNirvana">Northern Niravana</option>
+            <option value="GoldenSandsExpedition">Golden Sands Expedition</option>
+            <option value="CentralIndiaDelights">Central India Delights</option>
+            <option value="EasternEssenceDiscovery">Eastern Essence Discovery</option>
+            <option value="SerenityTrail">Serenity Trail</option>
+            <option value="SouthernSpiceTrail">Southern Spice Trail</option>
+        </select>
+
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" required>
+
+        <label for="adults">Number of Adults:</label>
+        <input type="number" id="adults" name="adults" required>
+
+        <label for="children">Number of Children (under 12):</label>
+        <input type="number" id="children" name="children" required>
+
+        <label for="special-requests">Special Requests/Comments:</label>
+        <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+
+        <label for="accommodation">Accommodation Type:</label>
+        <select id="accommodation" name="accommodation" required>
+            <option value="Hotel">Hotel</option>
+            <option value="Resort">Resort</option>
+            </select>
+
+        <label for="rooms">Number of Rooms:</label>
+        <input type="number" id="rooms" name="rooms" required>
+
+        <label for="room-preferences">Room Preferences (if any):</label>
+        <input type="text" id="room-preferences" name="room-preferences">
+
+        <label for="transport-mode">Transportation Mode:</label>
+        <select id="transport-mode" name="transport-mode" required>
+            <option value="Train">Train</option>
+            <option value="Bus">Bus</option>
+            <option value="Car Rental">Car Rental</option>
+        </select>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms & Conditions</label>
+        <a href="Payment.html">
+            <div class="btn-group">
+                <a target="_blank" href="Payment.html" class="w3-btn w3-margin-bottom">Proceed to Payment</a>
+              </div>
+    </form>
+</div>
+<footer>&copy MAHV Travels</footer>
+</body>
+</html>
